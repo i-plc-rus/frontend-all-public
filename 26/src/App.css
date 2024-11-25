@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+/* Добавим  стили для улучшения отображения на мобильных устройствах */
+@media (max-width: 600px) {
+  .MuiGrid-container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Обеспечим корректное отображение длинных чисел */
+.MuiTypography-root {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}

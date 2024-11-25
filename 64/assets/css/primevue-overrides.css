@@ -1,0 +1,18 @@
+.p-card-body,
+.p-card-content {
+    height: 100%;
+}
+
+.p-card {
+    overflow: hidden;
+}
+
+.p-buttongroup {
+    /* to allow wrapping of buttons in group if content doesn't fit */
+    display: flex;
+}
+
+.p-virtualscroller-content {
+    /* only has min-width by default */
+    width: 100%;
+}

@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    --generic-spacing: 0.5rem;
+    --positive-color: #548e29;
+    --negative-color: #ca4848;
+    --p-card-body-padding: var(--generic-spacing);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --positive-color: #79d039;
+        --negative-color: #ff5151;
+    }
+}
+
+html,
+#__nuxt {
+    height: 100%;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "beauty-budget-n1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier . --check",
+    "lintfix": "eslint . --fix && prettier --write --list-different ."
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.5",
+    "dayjs": "1.11.13",
+    "nuxt": "^3.13.0",
+    "uuid": "10.0.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "0.6.0",
+    "@types/uuid": "10.0.0",
+    "eslint": "9.13.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "prettier": "3.3.3",
+    "sass": "1.80.3"
+  }
+}

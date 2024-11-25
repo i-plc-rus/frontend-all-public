@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.MuiInputLabel-outlined {
+  background-color: transparent;
+  padding: 0 4px;
+}
+
+.MuiOutlinedInput-input {
+  padding: 14px 16px;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+.MuiButton-root {
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.MuiSvgIcon-root {
+  font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.MuiPaper-root {
+  overflow: hidden;
+}
+
+.MuiOutlinedInput-root {
+  transition: box-shadow 0.3s ease;
+}
+
+.MuiChip-root {
+  font-weight: 600;
+}
+
+.MuiListItem-root {
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.MuiDivider-root {
+  margin: 8px 0;
+}

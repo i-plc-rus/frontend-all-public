@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайтик</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .slider {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+        .slides {
+            display: none;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <nav>
+            <ul>
+                <li><a href="https://beautifulcode.ru/task/frontend">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="uslugi.html">Услуги</a></li>
+                <li><a href="telegram.html">Телеграм</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Мой телеграмм - @F0r3n1</h1>
+    <main>
+        <section id="home">
+            <h2>Главная страница</h2>
+            <div class="slider">
+                <img class="slides" src="path1.jpg" width="200" height="222" alt="Слайд 1">
+                <img class="slides" src="128x128.jpg" width="200" height="222" alt="Слайд 2">
+                <img class="slides" src="загруженное.jpg" width="200" height="222" alt="Слайд 3">
+            </div>
+        </section>
+        
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Я - 14 летний школьник который учится программировать, не судите строго</p>
+        </section>
+        
+        <section id="services">
+            <h2>Мои увлечения</h2>
+            <ul>
+                <li>Увлечение 1 : не знаю</li>
+                <li>Увлечение 2 : не знаю</li>
+                <li>Увлечение 3 : не знаю</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Свяжитесь со мной:</p>
+            <form>
+                <label for="name">Жюри:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Вопрос/Предложение:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2024 Мой сайт. Оцените от 1 до 10(я программирую меньше полугода и не всегда
+            из-за учебы)</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Меняет слайд каждые 2 секунды
+        }
+    </script>
+</body>
+</html>

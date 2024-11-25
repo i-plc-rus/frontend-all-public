@@ -1,0 +1,27 @@
+/* palette */
+:root {
+  --color-main-dark: #474350;
+  --color-main-light: #dfd7d7;
+
+  --color-accent: #e63462;
+  --color-accent-light: #e494aa;
+  --color-accent-dark: #7d1c36;
+}
+
+/* semantic color variables */
+:root {
+  --font-main: "Helvetica", "Arial", sans-serif;
+  --color-border: var(--color-main-light);
+  --color-border-hover: var(--color-main-dark);
+  --color-text: var(--color-main-dark);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--font-main);
+  color: var(--color-text);
+
+  background-color: var(--color-main-light);
+}

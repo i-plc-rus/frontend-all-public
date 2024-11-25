@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Budget Manager</h1>
+      <div class="balance">
+        <h2>Balance: <span id="balance-amount">$0.00</span></h2>
+      </div>
+
+      <div class="budget-input">
+        <input type="text" id="category-name" placeholder="Category Name" />
+        <input type="number" id="category-budget" placeholder="Budget Amount" />
+        <button id="add-category-button">Add Category</button>
+      </div>
+
+      <div class="categories">
+        <h3>Categories</h3>
+        <ul id="categories-list"></ul>
+      </div>
+
+      <div class="transaction-input">
+        <select id="transaction-category">
+          <option value="" disabled selected>Select Category</option>
+        </select>
+        <input type="number" id="transaction-amount" placeholder="Transaction Amount" />
+        <button id="add-transaction-button">Add Transaction</button>
+      </div>
+
+      <div class="charts">
+        <h3>Expense Distribution</h3>
+        <canvas id="expense-chart"></canvas>
+      </div>
+    </div>
+    <script type="module" src="app.js"></script>
+    <script type="module" src="chart.js"></script>
+  </body>
+</html>
